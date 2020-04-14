@@ -1,0 +1,272 @@
+body {
+  font-family: "Montserrat", sans-serif;
+  line-height: 1.3;
+}
+
+/* Figuras */
+
+.Forms {
+  position: relative;
+  height: 290px;
+  width: 415px;
+}
+
+.Triangulo {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-left: 136px solid transparent;
+  border-right: 136px solid transparent;
+  border-bottom: 220px solid #f4a097;
+  bottom: 0;
+  left: 0;
+}
+.Cuadrado {
+  height: 202px;
+  width: 202px;
+  background-color: #34CCCC;
+  position: absolute;
+  top: 0;
+  left: 71px;
+}
+.Circulo {
+  border-radius: 50%;
+  height: 229px;
+  width: 229px;
+  background-color: #8d7aff;
+  position: absolute;
+  top: 43px;
+  left: 171px;
+}
+/* Introducción */
+
+.MainSection {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+}
+
+.IntroductionContainer {
+  width: 421px;
+  height: fit-content;
+  margin-right: 50px;
+}
+
+.IntroductionContainer h1 {
+  font-weight: 500;
+  color: #505050;
+  font-size: 41px;
+  margin-bottom: 15px;
+}
+.IntroductionContainer h4 {
+  font-weight: 400;
+  color: #585858;
+  font-size: 25px;
+
+}
+
+/* Proyecto 1 */
+
+.ProjectContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* height: 95vh; */
+  width: 100vw;
+  position: relative;
+}
+.ProjectContainerInv {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 95vh;
+  width: 100vw;
+  flex-direction: row-reverse;
+}
+
+.ProjectText {
+  width: 460px;
+  display: none;
+}
+
+.Vermas {
+  margin-top: 0px;
+  position: absolute;
+  bottom: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+.Project1 {
+  background-color: #a15c79;
+  color: #ffffff;
+}
+
+.Project2 {
+  background-color: #34CCCC;
+  color: #ffffff
+}
+.Project3 {
+  background-color: #ffffff;
+  color: #FF7575;
+}
+.Project4 {
+  background-color: #FF7575;
+  color: #ffffff;
+}
+
+.ProjectTitle {
+  font-weight: 700;
+  font-size: 25px;
+}
+.ProjectIntro {
+  font-weight: 200;
+  font-size: 20px;
+}
+
+.ProjectBar {
+  width: 163px;
+  margin-left: 0;
+  border: 1px solid #ffffff;
+  margin-top: 14px;
+  margin-bottom: 17px;
+}
+
+.Project3 .ProjectBar {
+  border: 1px solid #FF7575; 
+}
+
+.ProjectImages {
+  display: flex;
+  height: 679px;
+  width: fit-content;
+}
+
+.ProjectImagesInv {
+  display: flex;
+  height: 679px;
+  width: fit-content;
+  margin-right: 111px;
+  
+}
+
+.ProjectContainerInv .ProjectText {
+  margin-right: 111px;
+}
+
+.MockupSize {
+  width: 344px;
+  height: 562px;
+}
+
+.UpImage {
+  align-self: flex-start;
+}
+.DownImage {
+  align-self: flex-end;
+}
+
+/* Project 1 Content */
+
+.ContentContainer {
+
+  display: flex;
+  flex-direction: column;
+  width: 784px;
+}
+
+.ProjectSection {
+  margin-bottom: 40px;
+  /* display: none; */
+}
+
+
+.SectionTitle {
+
+  font-size: 25px;
+  font-weight: 500;
+}
+
+.SectionSubtitle {
+
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+.LongBar {
+
+  width: 276px;
+  margin-left: 0;
+  border: 1px solid #ffffff;
+  margin-top: 14px;
+  margin-bottom: 17px;
+}
+
+.Quote {
+
+  font-size: 20;
+  font-style: italic;
+  font-weight: 200;
+}
+
+.Quote b{
+
+  font-size: 20;
+  font-style: italic;
+  font-weight: 500;
+}
+
+.GeneralText {
+
+    font-size: 20;
+    font-weight:200;
+    margin-top: 14px;
+}
+
+.GeneralText b {
+
+  font-weight: 500;
+}
+
+li{
+  margin-left: 20px;
+  margin-bottom: 15px;
+}
+
+.ContentImage {
+
+  width: 100%;
+  margin-top: 35px;
+  margin-bottom: 30px;
+}
+
+.MediumImage {
+
+  width: 45%;
+}
+
+.WiderContainer {
+
+  display: flex;
+  justify-content: space-between;
+  width: 140%;
+  margin-left:-20% ;
+}
+
+.BigImage{
+
+  display: flex;
+  justify-content: center;
+  width: 120%;
+  margin-left: -10%;
+}
