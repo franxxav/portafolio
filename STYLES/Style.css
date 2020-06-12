@@ -299,6 +299,9 @@ top: 60px
 .Vermas {
   margin-top: 35px;
   font-weight: 400;
+  position: relative;
+  width: fit-content;
+  cursor: pointer;
 }
 
 .VerMenos {
@@ -308,6 +311,7 @@ top: 60px
   margin-left: 120%;
   width: 50px;
   text-align: center;
+  cursor: pointer;
 }
 
 .Hover {
@@ -320,6 +324,7 @@ top: 60px
   right: 0;
   height: 100%;
   width: 100%;
+  color: #ffffff;
   font-size: 15px;
   font-weight: 200;
   text-align: center;
@@ -333,9 +338,32 @@ top: 60px
   opacity: 0;
 }
 
+
+.Construccion .HoverText {
+  opacity: 0;
+  transition: .2s ease;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+ 
+}
+.Construccion .Vermas:hover .HoverText{
+  opacity: 1;
+}
+
+.Construccion .Vermas:hover p {
+  opacity: 0;
+}
+
+
 .Project1 {
   background-color: #a15c79;
   color: #ffffff;
+
 }
 
 .Project2 {
@@ -343,12 +371,20 @@ top: 60px
   color: #ffffff
 }
 .Project3 {
-  background-color: #ffffff;
   color: #FF7575;
+  transition: 1s;
 }
 .Project4 {
   background-color: #FF7575;
   color: #ffffff;
+}
+
+.Project3 .bgimg{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+
 }
 
 .HeaderImage  {
@@ -429,6 +465,12 @@ top: 60px
   top:161px;
   left:446px;
 
+}
+.Perrito{
+  position: absolute;
+  width: 312px;
+  top: 8px;
+  left: 67px;
 }
 
 /* Project 1 Content */
@@ -526,4 +568,8 @@ li{
   justify-content: center;
   width: 120%;
   margin-left: -10%;
+}
+
+.Project3 .UnicoTexto {
+  margin-bottom: 40%;
 }
