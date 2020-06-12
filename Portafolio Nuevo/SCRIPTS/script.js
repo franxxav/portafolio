@@ -24,6 +24,8 @@ window.onload = function() {
     for (let i = 0; i < ProjectSections.length; i++) {
       ProjectSections[i].style.display = "initial";
     }
+    let Project3 = document.querySelectorAll(".Project3");
+    Project3[0].style.color ="#FFFFFF"
   });
 
   let Vermenos1 = document.querySelectorAll(".Project1 .VerMenos");
@@ -38,5 +40,24 @@ window.onload = function() {
     for (let i = 0; i < ProjectSections.length; i++) {
       ProjectSections[i].style.display = "none";
     }
+    let Project1 = document.querySelectorAll(".Project1");
+    Project1[0].scrollIntoView()
   });
-};
+
+  let Vermenos3 = document.querySelectorAll(".Project3 .VerMenos");
+  Vermenos3[0].addEventListener("click", event => {
+    let ProjectSections = document.querySelectorAll(
+      ".Project3 .ProjectSection"
+    );
+    let ProjectIntro = document.querySelectorAll(".Project3 .ProjectText");
+    let ParentContainer = event.currentTarget.parentNode.parentNode;
+    ParentContainer.style.height = "95vh";
+    ProjectIntro[0].style.display = "initial";
+    for (let i = 0; i < ProjectSections.length; i++) {
+      ProjectSections[i].style.display = "none";
+    }
+    let Project3 = document.querySelectorAll(".Project3");
+    Project3[0].style.color ="#FF7575"
+    Project3[0].scrollIntoView()
+});
+}

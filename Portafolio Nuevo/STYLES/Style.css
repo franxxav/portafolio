@@ -45,8 +45,8 @@ body {
   align-items: center;
   justify-content: center;
   height: 100vh;
-  width: 100vw;
-overflow: hidden;
+  width: 100%;
+
 }
 
 .IntroductionContainer {
@@ -278,7 +278,7 @@ top: 60px
   align-items: center;
   justify-content: center;
   height: 95vh;
-  width: 100vw;
+  width: 100%;
   position: relative;
   /* overflow: hidden; */
 }
@@ -287,7 +287,7 @@ top: 60px
   align-items: center;
   justify-content: center;
   height: 95vh;
-  width: 100vw;
+  width: 100%;
   flex-direction: row-reverse;
 }
 
@@ -298,20 +298,23 @@ top: 60px
 
 .Vermas {
   margin-top: 35px;
-
+  font-weight: 400;
+  position: relative;
+  width: fit-content;
+  cursor: pointer;
 }
 
 .VerMenos {
   position: sticky;
   bottom: 100px;
   top: 90vh;
-  margin-left: 70vw;
+  margin-left: 120%;
   width: 50px;
   text-align: center;
+  cursor: pointer;
 }
 
 .Hover {
-
   opacity: 0;
   transition: .3s ease;
   position: absolute;
@@ -321,6 +324,7 @@ top: 60px
   right: 0;
   height: 100%;
   width: 100%;
+  color: #ffffff;
   font-size: 15px;
   font-weight: 200;
   text-align: center;
@@ -332,14 +336,34 @@ top: 60px
 
 .VerMenos:hover img {
   opacity: 0;
-
 }
 
+
+.Construccion .HoverText {
+  opacity: 0;
+  transition: .2s ease;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+ 
+}
+.Construccion .Vermas:hover .HoverText{
+  opacity: 1;
+}
+
+.Construccion .Vermas:hover p {
+  opacity: 0;
+}
 
 
 .Project1 {
   background-color: #a15c79;
   color: #ffffff;
+
 }
 
 .Project2 {
@@ -347,12 +371,28 @@ top: 60px
   color: #ffffff
 }
 .Project3 {
-  background-color: #ffffff;
   color: #FF7575;
+  transition: 1s;
 }
 .Project4 {
   background-color: #FF7575;
   color: #ffffff;
+}
+
+.Project3 .bgimg{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+
+}
+
+.HeaderImage  {
+  position:absolute;
+  top: 0;
+  bottom: 0;
+  height: 100vh;
+  width: 100vw;
 }
 
 .ProjectTitle {
@@ -382,14 +422,17 @@ top: 60px
   display: flex;
   height: 679px;
   width: fit-content;
+  position: relative;
 }
 
 .ProjectImagesInv {
+  margin-top: 60px;
+  margin-bottom: 50px;
   display: flex;
   height: 679px;
   width: fit-content;
   margin-right: 111px;
-  
+  position: relative;
 }
 
 .ProjectContainerInv .ProjectText {
@@ -399,6 +442,8 @@ top: 60px
 .MockupSize {
   width: 344px;
   height: 562px;
+  z-index: 30;
+  position: relative;
 }
 
 .UpImage {
@@ -406,6 +451,26 @@ top: 60px
 }
 .DownImage {
   align-self: flex-end;
+}
+
+.UpGif {
+  position: absolute;
+  width: 212px;
+  top: 44px;
+  left: 102px;
+}
+.DownGif {
+  position: absolute;
+  width: 212px;
+  top:161px;
+  left:446px;
+
+}
+.Perrito{
+  position: absolute;
+  width: 312px;
+  top: 8px;
+  left: 67px;
 }
 
 /* Project 1 Content */
@@ -503,4 +568,8 @@ li{
   justify-content: center;
   width: 120%;
   margin-left: -10%;
+}
+
+.Project3 .UnicoTexto {
+  margin-bottom: 40%;
 }
